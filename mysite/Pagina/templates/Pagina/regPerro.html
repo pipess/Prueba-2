@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+ <meta charset=”utf8″ />
+   <meta name="keywords" content="HTML5, CSS3, JavaScript">    
+   <script type="text/javascript" src="JS/js.js"></script>
+   <link rel="stylesheet" type="text/css" href="CSS/Estilos.CSS">
+   </head>
+   <body style="background: aquamarine; text-align: center;">
+       <h1 > Registra un perro </h1> 
+      <form method ="POST">
+        {%csrf_token%}
+       {{form.as_p}}
+      
+	   		
+	   	  <input type="submit" value="Agregar" >
+	   	  
+	   </form>  
+       
+       
+                
+                 <ul>
+                     <li class="menu_item"><a class="menu_link" href="Index.html" >Inicio</a></li>
+                 </ul>
+        
+   </body>
+</html>

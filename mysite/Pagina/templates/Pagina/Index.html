@@ -1,0 +1,145 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<HTML>
+<HEAD lang="es">
+ <meta charset=”utf8″ />
+<TITLE> Perretes </TITLE>
+ <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'CSS/Estilos.CSS' %}">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+<link href="https://file.myfontastic.com/HnedRGYAqGbVswvtDTXjgX/icons.css" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</HEAD>
+<BODY>
+	<HEADER class="header">
+		<nav class="logo">
+            <div  >
+              <img src="{% static 'Imagenes/loguito.jpg' %}" class="logo-img">
+              <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                  <i class="material-icons" style="background: #33FFAC;   ">menu</i>
+              </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down" style="margin-right: 500px; ">
+                 <li class="menu_item"><a class="menu_link" href="" >Inicio</a></li>
+                 <li class="menu_item"><a class="menu_link" href="quienes.html">Quienes somos</a></li>
+                 <li class="menu_item"><a class="menu_link" href="registro.html">Registro</a></li>
+                 <li class="menu_item"><a class="menu_link" href="contacto.html">Contáctenos</a></li>
+                 <li class="menu_item"><a class="menu_link" href="regPerro.html" >Mascota</a></li>
+              </ul>
+            </div>
+        </nav>
+
+        
+              <ul id="mobile-nav" class="sidenav">
+                 <li class="menu_item"><a class="menu_link" href="">Inicio</a></li>
+                 <li class="menu_item"><a class="menu_link" href="quienes.html" >Quienes somos</a></li>
+                 <li class="menu_item"><a class="menu_link" href="registro.html" >Registro</a></li>
+                 <li class="menu_item"><a class="menu_link" href="contacto.html" >Contáctenos</a></li>
+                 <li class="menu_item"><a class="menu_link" href="regPerro.html" >Mascota</a></li>
+              </ul>
+</HEADER>
+
+<div class="carousel carousel-slider" style="z-index: 0; background: aquamarine; " >
+    <a class="carousel-item" href="#one!"><img src="{% static 'Imagenes/perro1.jpg' %}" class="Imagenes" style="width: 100%;"></a>
+    <a class="carousel-item" href="#two!"><img src="{% static 'Imagenes/perro2.jpg' %}" class="Imagenes" style="width: 100%;"></a>
+    <a class="carousel-item" href="#three!"><img src="{% static 'Imagenes/perro3.jpg' %}" class="Imagenes" style="width: 100%;"></a>
+    <a class="carousel-item" href="#four!"><img src="{% static 'Imagenes/perro4.jpg' %}" class="Imagenes" style="width: 100%;"></a>
+
+    <div class="contenedor_banner" style="position: absolute;">
+        <h2 class="banner"  style="padding-left: 20"><b>"Adopta un perro y dale un hogar"</b></h2>
+    </div>
+
+ </div>
+
+
+
+          
+
+
+	
+<main>
+    <div class="contenedor">
+         <section class="info">
+            <article>
+               <h2 class="numero" style="background: aquamarine;" >
+               
+             
+
+               </h2>
+            </article>     
+        </section>
+        <section class="rescate">
+           <h2 class="titulo_rescate"><p>Rescate</p></h2>
+           <h2 class="bajo_titulo"><p>Etapa uno</p></h2>
+           <hr class="linea">
+            <article>
+               <h2 class="texto"><p>Rescatamos perros en situacion de peligro y/o abandono. Los rehabilitamos y los </p>
+                   <p>preparamos para buscarles un hogar.</p></h2>
+                  
+                     
+               
+            </article>
+            <article>
+                <h2><img src="{% static 'Imagenes/rescate.jpg' %}" alt="" class="perrete" ></h2>
+            </article>
+            <article>
+                <h2><img src="{% static 'Imagenes/crowfunding.jpg' %}" alt="" class="comida"></h2>
+            </article>
+        
+             <article>
+               <h2 ><b><p class="crow" >CROWDFUNDING</p></b></h2>
+                <h2 ><p class="fina" >FINANCIAMIENTO</p></h2>
+                <hr class="linea2">
+                <h2 class="parrafo" >Sigue nuestras redes sociales para informarte acerca de las diversas campañas y actividades que realizamos para obtener financiamiento para seguir ayudando</h2>
+            </article>
+            
+        </section>
+        <section style="background: #33FFAC; display: flex; justify-content: space-between;">
+            <article>
+                <h3 ><img src="{% static 'Imagenes/p1.jpg' %}" alt="" style="width: 90%; margin-left: 15px;"></h3>
+                <h3 ><img src="{% static 'Imagenes/p2.jpg' %}" alt="" style="width: 90%; margin-left: 15px;"></h3>  
+                <h3 ><img src="{% static 'Imagenes/p3.jpg' %}" alt="" style="width: 90%; margin-left: 15px;"></h3>              
+                         
+            </article>
+            <article>
+                <h3 ><img src="{% static 'Imagenes/p4.jpg' %}" alt="" style="width: 80%; margin-left: 15px;"></h3>
+                <h3 ><img src="{% static 'Imagenes/p5.jpg' %}" alt="" style="width: 90%; margin-left: 15px;"></h3>
+             
+            </article>
+             <article>
+                <h3 ><img src="{% static 'Imagenes/p6.jpg' %}" alt="" style="width:90%; display: flex; justify-content: space-between; "></h3>
+                <h3 ><img src="{% static 'Imagenes/p7.jpg' %}" alt="" style="width: 85%; margin-left: 10px; "></h3>
+                <h3 ><img src="{% static 'Imagenes/p8.jpg' %}" alt="" style="width: 85%; margin-left: 12px;  "></h3>  
+                   
+            </article>
+        </section>
+        <section style="background: #D0D3D4; margin-top: -25;">
+        <h4> <p class="final">Desarrollo Web y Mobile</p>
+        <br>
+        
+        </h4>   
+        </section>
+    </div>
+    
+</main>
+
+<script type="text/javascript" src="{% static 'jquery-3.3.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'materialize/js/materialize.min.js' %}"></script>
+
+<script type="text/javascript">
+   $('.carousel.carousel-slider').carousel({
+    fullWidth: true
+  });
+</script>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+
+</BODY>
+</HTML>

@@ -1,0 +1,188 @@
+
+.logo	{
+	background: #33FFAC;
+ 
+}
+
+.Imagenes{
+    height: 60%;
+}
+
+.logo-img{
+    width: 80%;
+  
+}
+
+
+
+
+.banner{
+    color: white;
+    text-align: left; 
+    font-size: 15px; 
+    margin-top: 150px;
+}
+
+.section-carr{
+    padding-top: -150px;
+}
+.info{
+    
+    text-align: center; 
+    background: aquamarine; 
+    color: white;
+    margin-top: -36;
+   
+}
+.numero{
+    font-size: 20px;
+}
+
+
+    
+.linea{
+    margin-left: 70%;
+    width: 30%;
+    height: 2px;
+    background: black;
+    
+      
+    
+}
+.rescate{
+    background: white;
+    padding-right: 12px;
+    
+}
+.titulo_rescate{
+    color:black;
+    text-align: right;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: -30px;
+    
+}
+
+.bajo_titulo{
+    text-align: right;
+    font-size: 20px;
+    margin-top: -30px;
+}
+
+
+.texto{
+    font-size: 10px;
+    text-align: right;
+}
+.perrete{
+    margin-left:120px;
+    width: 70%;
+}
+.comida{
+    width: 60%;
+}
+
+.crow{
+    font-size: 30px; 
+    margin-top:-44px; 
+    padding-left: 10PX;
+}
+.fina{
+    font-size: 19px; 
+    margin-top:-55px;
+}
+.linea2{
+   margin-right: 75%; 
+    width: 30%; 
+    height: 2px; 
+    background: black;
+}
+.parrafo{
+    font-size: 10px;
+}
+.final{
+    font-size: 18;
+}
+
+@media(min-width:450px){
+
+    .Imagenes{
+        height: 100%;
+    }
+
+.info{
+    
+    text-align: center; 
+    background: aquamarine; 
+    color: white;
+}
+    
+    .logo-img{
+        width: 20%;
+        margin-left: 10;
+        margin-top: 8;   
+    }
+    .banner{
+        font-size: 25;
+    }
+    .titulo_rescate{
+        text-align: center;
+        font-size: 45
+            
+    }
+    .bajo_titulo{
+        text-align: center;
+        font-size: 25;
+    }
+    .linea{
+        margin-left: 25%;
+    
+    width: 50%;
+    height: 2px;
+    background: black;
+    }
+    .texto{
+        text-align: center;
+        font-size: 25;
+    }
+    .perrete{
+        width: 40%;
+        height: 40%;
+        margin-left: 700px;
+    }
+    .comida{
+        width: 40%;
+        height: 40%;
+        margin-top: -50;
+        padding-left: 150px;
+        
+    }
+    .crow{
+        text-align: center;
+        font-size: 45px;
+    }
+    .fina{
+        text-align: center;
+        font-size: 25px;
+    }
+    .linea2{
+        margin-left: 25%;
+    
+    width: 50%;
+    height: 2px;
+    background: black;
+    }
+    .parrafo{
+        text-align: center;
+        font-size: 20px;
+    }
+    .final{
+        text-align: center;
+        font-size: 25px;
+    }
+    .formulario{
+        border-left: -20px;
+    }
+   
+ }
+
