@@ -37,7 +37,7 @@ def registro(request):
     return render(request, 'Pagina/registro.html', variables )    
 
 def contacto(request):
-    return render(request, 'Pagina/contacto.html', {})      
+    return render(request, 'Pagina/contacto.html', {})    
 
 def regPerro(request):
     form_rePerro = rePerro(request.POST or None)
@@ -54,5 +54,21 @@ def regPerro(request):
        db_rePerro = Perro(Nombre=Nombre, Raza=Raza, Descripcion=Descripcion, Estado=Estado)
        db_rePerro.save()
     return render(request, 'Pagina/regPerro.html', variabl )  
+
+def perro_list(request):
+    perro = Perro.objects.all()
+    context = {'perros':perro}
+    return render(request, 'Pagina/perro_list.html', context)  
+
+def delPerro(request, id_perro):
+    perro = Perro.objects.get(id=id_mascota)
+    if request.method =='GET':
+        form = rePerro(instance=perro)
+    else:
+        form = rePerro(request.POST, instance=perro)
+        if form.is_valid():
+            form.save()    
+    return render(request, 'Pagina/contacto.html', {'form':form})    
+
 
 

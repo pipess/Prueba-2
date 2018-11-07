@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+   <head>
+ <meta charset=”utf8″ />
+   <meta name="keywords" content="HTML5, CSS3, JavaScript">    
+   <script type="text/javascript" src="JS/js.js"></script>
+   <link rel="stylesheet" type="text/css" href="CSS/Estilos.CSS">
+   </head>
+   <body style="background: aquamarine; text-align: center;">
+    <table>
+      <thead> 
+        <tr>
+         
+          <td>Nombre</td>
+          <td>Raza</td>
+          <td>Descripcion</td>
+          <td>Estado</td>
+        </tr>
+      </thead>
+      <tbody>
+        {% if perros %}
+        {% for perro in perros %}
+
+        <tr>
+            <td style="color:black;">{{perro.Nombre}}</td>
+            <td>{{perro.Raza}}</td>
+            <td>{{perro.Descripcion}}</td>
+            <td>{{perro.Estado}}</td>
+            
+
+        </tr>
+        {% endfor %}
+
+        {% else %}
+        <h1>No hay registros de perros</h1>
+        {% endif %}
+      </tbody>
+
+    </table>
+        
+   </body>
+</html>
